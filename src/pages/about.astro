@@ -1,7 +1,26 @@
+---
+const pageTitle = "About Page";
+---
+
+
 <body>
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/hobbies">Hobbies</a>
-    <h1>Who am I ?</h1>
-    <p>Hi there my name is Terry and I am a frontend developer<a href="/about">About</a></p>
+    <h1>{pageTitle}</h1>
+    <p>Hi there my name is Terry and I am a frontend developer<a href="/about">{pageTitle}</a></p>
 </body>
+
+<style>
+
+    body {
+        font-family: sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(22, 162, 66);
+    }
+    a:hover{
+        color: rgb(22, 162, 66);
+    }
+</style>
